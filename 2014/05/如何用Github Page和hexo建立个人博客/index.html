@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>help | DAY DAY UP</title>
+    <title>DAY DAY UP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Yang">
     
-    <meta name="description" content="github上新建repository
+    <meta name="description" content="title: 如何用Github Page和hexo建立个人博客date: 2014-05-19 17:09:51
+tags:github, github page, hexo, blog
+
+github上新建repository
 在Dodaddy购买域名
 在DNSpod设置DNS
-本地安装配置git，node，hexo
-
-Github Pages：免费的静态站点，特点：搭建简单，支持自制页面和Jekyll，可以绑定你的域名  
-登录Github，新建repository，github提">
+本地安装配置gi">
     
     
     
@@ -74,12 +74,12 @@ Github Pages：免费的静态站点，特点：搭建简单，支持自制页�
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/05/如何用Github Page和hexo建立个人博客/" title="help" itemprop="url">help</a>
+      <a href="/2014/05/如何用Github Page和hexo建立个人博客/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
       <a href="http://www.yangact.com/about" title="Yang" target="_blank">Yang</a>
   <p class="article-time">
-    <time datetime="2014-05-15T09:09:51.000Z" itemprop="datePublished">发表于5月 15 2014</time>
+    <time datetime="2014-05-19T14:59:53.000Z" itemprop="datePublished">发表于5月 19 2014</time>
     
   </p>
 </header>
@@ -89,11 +89,13 @@ Github Pages：免费的静态站点，特点：搭建简单，支持自制页�
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags:github,_github_page,_hexo,_blog"><span class="toc-number">1.</span> <span class="toc-text">tags:github, github page, hexo, blog</span></a></li></ol>
 		
 		</div>
 		
-		<ol>
+		<p>title: 如何用Github Page和hexo建立个人博客<br>date: 2014-05-19 17:09:51</p>
+<h2 id="tags:github,_github_page,_hexo,_blog">tags:github, github page, hexo, blog</h2>
+<ol>
 <li>github上新建repository</li>
 <li>在Dodaddy购买域名</li>
 <li>在DNSpod设置DNS</li>
@@ -106,9 +108,9 @@ Github Pages：免费的静态站点，特点：搭建简单，支持自制页�
 <li>You must use the <strong>username/username.github.io</strong> naming scheme.</li>
 <li>Content from the master branch will be used to build and publish your GitHub Pages site.</li>
 </ul>
-<p>因此我的项目名称为：<em>yang0013.github.io</em></p>
+<p>因此我的项目名称为：<em>yang0013.github.io</em><br><br/></p>
 <hr>
-<p><strong>在Dodaddy购买域名</strong><br>网上可以搜到优惠码，但使用优惠码的无法使用支付宝进行支付。普通域名$12.99，使用优惠码$8.99，便宜4美元。<br>域名购买成功后，登录后，点击域名，在Domain Settings 中添加 Nameservers， nameserver为dnspod提供的<br>    F1G1NS1.DNSPOD.NET<br>    F1G1NS2.DNSPOD.NET  </p>
+<p><strong>在Dodaddy购买域名</strong><br>网上可以搜到优惠码，但使用优惠码的无法使用支付宝进行支付。普通域名$12.99，使用优惠码$8.99，便宜4美元。<br>域名购买成功后，登录后，点击域名，在Domain Settings 中添加 Nameservers， nameserver为dnspod提供的<br>    F1G1NS1.DNSPOD.NET<br>    F1G1NS2.DNSPOD.NET<br><br/></p>
 <hr>
 <p><strong>注册DNSpod账号，并设置DNS</strong><br>添加两个A记录和CNAME记录</p>
 <table>
@@ -151,32 +153,20 @@ Github Pages：免费的静态站点，特点：搭建简单，支持自制页�
 </table>
 <p>A记录地址可以在<br><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages" target="_blank">Github Page</a>查看：<br>&gt;<br>Apex domains<br>The simplest way to configure an apex domain for your GitHub Pages site is to create A records that resolve to the following IP addresses:<br>&ensp;&ensp;&emsp;&nbsp;<strong>192.30.252.153</strong><br>&emsp;&emsp;&nbsp;<strong>192.30.252.154  </strong></p>
 <p>  CNAME记录值为Github的repository地址  </p>
+<p><br/></p>
 <hr>
 <p> 安装Git：<br> 添加ssh信任，生成公钥文件：  </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-</pre></td><td class="code"><pre> <span class="char">$ </span>ssh-keygen -t rsa -<span class="class">C</span> <span class="comment">"邮件地址@youremail.com"</span>  
- <span class="char">$ </span>cd ~/.ssh
+<pre><code><span class="char">$ </span>ssh-keygen -t rsa -<span class="class">C</span> <span class="comment">"邮件地址@youremail.com"</span>  
+<span class="char">$ </span>cd ~/.ssh
  <span class="char">$ </span>cat id_rsa.pub
-</pre></td></tr></table></figure>
-
-
-<p> 登录github，菜单Account Settings-&gt;SSH Public keys-&gt;add another public key,将id_rsa.pub的内容拷贝到文本框中。<br> 测试  </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre> <span class="variable">$ssh</span> -<span class="constant">T</span> git<span class="variable">@github</span>.com
-</pre></td></tr></table></figure>
-
-
-<p> 测试用户信息  </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre> $ git config --<span class="keyword">global</span> user.name <span class="string">"yang0013"</span>        <span class="comment">// 用户名</span>
- $ git config --<span class="keyword">global</span> user.email  <span class="string">"github注册邮箱"</span>  <span class="comment">// 填写自己的注册邮箱</span>
-</pre></td></tr></table></figure>
-
-
-<p> 安装hexo<br> 安装node之后，<br> <code>npm install -g hexo</code><br> 初始化，新建一个目录，进入目录执行命令  </p>
+</code></pre><p> 登录github，菜单Account Settings-&gt;SSH Public keys-&gt;add another public key,将id_rsa.pub的内容拷贝到文本框中。<br> 测试  </p>
+<pre><code><span class="variable">$ssh</span> -<span class="constant">T</span> git<span class="variable">@github</span>.com
+</code></pre><p> 测试用户信息  </p>
+<pre><code>$ git config --<span class="keyword">global</span> user.name <span class="string">"yang0013"</span>        <span class="comment">// 用户名</span>
+$ git config --<span class="keyword">global</span> user.email  <span class="string">"github注册邮箱"</span>  <span class="comment">// 填写自己的注册邮箱</span>
+</code></pre><p> 安装hexo<br> 安装node之后，  </p>
+<pre><code>npm <span class="keyword">install</span> -g hexo   
+</code></pre><p> 初始化，新建一个目录，进入目录执行命令  </p>
 <pre><code> hexo init    
 hexo g  
 hexo s  
@@ -208,7 +198,7 @@ git pull
 
 <div class="article-share" id="share">
 
-  <div data-url="http://www.yangact.com/2014/05/如何用Github Page和hexo建立个人博客/" data-title="help | DAY DAY UP" data-tsina="undefined" class="share clearfix">
+  <div data-url="http://www.yangact.com/2014/05/如何用Github Page和hexo建立个人博客/" data-title="DAY DAY UP" data-tsina="undefined" class="share clearfix">
   </div>
 
 </div>
