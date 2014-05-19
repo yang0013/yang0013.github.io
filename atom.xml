@@ -4,7 +4,7 @@
   <subtitle><![CDATA[step by step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yangact.com/"/>
-  <updated>2014-05-19T15:20:43.360Z</updated>
+  <updated>2014-05-19T15:24:24.796Z</updated>
   <id>http://www.yangact.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.yangact.com/2014/05/github%20blog/"/>
     <id>http://www.yangact.com/2014/05/github blog/</id>
     <published>2014-05-19T15:57:30.000Z</published>
-    <updated>2014-05-19T15:20:12.000Z</updated>
+    <updated>2014-05-19T15:23:46.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li>github上新建repository</li>
 <li>在Dodaddy购买域名</li>
@@ -116,7 +116,7 @@ git pull
 ]]></content>
     
     
-      <category term="github" scheme="http://www.yangact.com/tags/github/"/>
+      <category term="github hexo 博客" scheme="http://www.yangact.com/tags/github%20hexo%20%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
