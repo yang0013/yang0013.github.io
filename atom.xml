@@ -4,7 +4,7 @@
   <subtitle><![CDATA[step by step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yangact.com/"/>
-  <updated>2014-05-19T15:37:19.306Z</updated>
+  <updated>2014-05-19T23:16:15.124Z</updated>
   <id>http://www.yangact.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.yangact.com/2014/05/github%20blog/"/>
     <id>http://www.yangact.com/2014/05/github blog/</id>
     <published>2014-05-19T15:57:30.000Z</published>
-    <updated>2014-05-19T15:37:15.000Z</updated>
+    <updated>2014-05-19T23:13:21.000Z</updated>
     <content type="html"><![CDATA[<ol>
 <li><strong>github上新建repository</strong></li>
 <li><strong>在Dodaddy购买域名</strong></li>
@@ -113,7 +113,7 @@ git pull
 </code></pre><p>文件内容只有一行： <em>yangact.com</em>，此域名为在godaddy申请到的域名。保存文件后，<br>提交更新至github代码仓库中  </p>
 <pre><code>hexo d <span class="attribute">-g</span>
 </code></pre><p> 此时，设置完成。可以访问自己的主页了。根据需要修改themes/jacman/_config.yml。</p>
-<p>参考链接:<br><a href="http://jianshu.io/p/05289a4bc8b2" target="_blank">http://jianshu.io/p/05289a4bc8b2</a><br><a href="https://www.dnspod.cn" target="_blank">https://www.dnspod.cn</a><br><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages" target="_blank">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages</a><br><a href="http://pchou.info/web-build/2013/01/05/build-github-blog-page-03.html" target="_blank">http://pchou.info/web-build/2013/01/05/build-github-blog-page-03.html</a><br><a href="http://hexo.io/docs/deployment.html" target="_blank">http://hexo.io/docs/deployment.html</a><br><a href="https://help.github.com/articles/user-organization-and-project-pages" target="_blank">https://help.github.com/articles/user-organization-and-project-pages</a><br><a href="https://help.github.com/articles/custom-404-pages" target="_blank">https://help.github.com/articles/custom-404-pages</a></p>
+<p>参考链接:<br><a href="http://jianshu.io/p/05289a4bc8b2" target="_blank">http://jianshu.io/p/05289a4bc8b2</a><br><a href="https://www.dnspod.cn" target="_blank">https://www.dnspod.cn</a><br><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages" target="_blank">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages</a><br><a href="http://pchou.info/web-build/2013/01/05/build-github-blog-page-03.html" target="_blank">http://pchou.info/web-build/2013/01/05/build-github-blog-page-03.html</a><br><a href="http://hexo.io/docs/deployment.html" target="_blank">http://hexo.io/docs/deployment.html</a><br><a href="https://help.github.com/articles/user-organization-and-project-pages" target="_blank">https://help.github.com/articles/user-organization-and-project-pages</a><br><a href="http://wuchong.me/blog/2014/01/17/use-github-to-manage-hexo-source/" target="_blank">使用GitHub来管理博客源文件</a></p>
 ]]></content>
     
     
