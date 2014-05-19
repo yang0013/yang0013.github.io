@@ -4,7 +4,7 @@
   <subtitle><![CDATA[step by step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yangact.com/"/>
-  <updated>2014-05-19T15:24:24.796Z</updated>
+  <updated>2014-05-19T15:37:19.306Z</updated>
   <id>http://www.yangact.com/</id>
   
   <author>
@@ -19,12 +19,12 @@
     <link href="http://www.yangact.com/2014/05/github%20blog/"/>
     <id>http://www.yangact.com/2014/05/github blog/</id>
     <published>2014-05-19T15:57:30.000Z</published>
-    <updated>2014-05-19T15:23:46.000Z</updated>
+    <updated>2014-05-19T15:37:15.000Z</updated>
     <content type="html"><![CDATA[<ol>
-<li>github上新建repository</li>
-<li>在Dodaddy购买域名</li>
-<li>在DNSpod设置DNS</li>
-<li>本地安装配置git，node，hexo</li>
+<li><strong>github上新建repository</strong></li>
+<li><strong>在Dodaddy购买域名</strong></li>
+<li><strong>在DNSpod设置DNS</strong></li>
+<li><strong>本地安装配置git，node，hexo</strong></li>
 </ol>
 <p>Github Pages：免费的静态站点，特点：搭建简单，支持自制页面和Jekyll，可以绑定你的域名  </p>
 <p>登录Github，新建repository，github提供两种方式建立Pages，这里采用 “User &amp; Organiztion Pages”，注意名称必须是 <em>github_username.github.io</em>， 官网的说明：</p>
@@ -113,10 +113,15 @@ git pull
 </code></pre><p>文件内容只有一行： <em>yangact.com</em>，此域名为在godaddy申请到的域名。保存文件后，<br>提交更新至github代码仓库中  </p>
 <pre><code>hexo d <span class="attribute">-g</span>
 </code></pre><p> 此时，设置完成。可以访问自己的主页了。根据需要修改themes/jacman/_config.yml。</p>
+<p>参考链接:<br><a href="http://jianshu.io/p/05289a4bc8b2" target="_blank">http://jianshu.io/p/05289a4bc8b2</a><br><a href="https://www.dnspod.cn" target="_blank">https://www.dnspod.cn</a><br><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages" target="_blank">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages</a><br><a href="http://pchou.info/web-build/2013/01/05/build-github-blog-page-03.html" target="_blank">http://pchou.info/web-build/2013/01/05/build-github-blog-page-03.html</a><br><a href="http://hexo.io/docs/deployment.html" target="_blank">http://hexo.io/docs/deployment.html</a><br><a href="https://help.github.com/articles/user-organization-and-project-pages" target="_blank">https://help.github.com/articles/user-organization-and-project-pages</a><br><a href="https://help.github.com/articles/custom-404-pages" target="_blank">https://help.github.com/articles/custom-404-pages</a></p>
 ]]></content>
     
     
-      <category term="github hexo 博客" scheme="http://www.yangact.com/tags/github%20hexo%20%E5%8D%9A%E5%AE%A2/"/>
+      <category term="github" scheme="http://www.yangact.com/tags/github/"/>
+    
+      <category term="hexo" scheme="http://www.yangact.com/tags/hexo/"/>
+    
+      <category term="博客" scheme="http://www.yangact.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
