@@ -4,7 +4,7 @@
   <subtitle><![CDATA[step by step]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yangact.com/"/>
-  <updated>2014-05-19T23:31:05.666Z</updated>
+  <updated>2014-05-20T13:24:50.980Z</updated>
   <id>http://www.yangact.com/</id>
   
   <author>
@@ -130,8 +130,8 @@ git pull
     <link href="http://www.yangact.com/2014/05/hello-world/"/>
     <id>http://www.yangact.com/2014/05/hello-world/</id>
     <published>2014-05-13T10:57:30.000Z</published>
-    <updated>2014-05-13T10:57:30.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs" target="_blank">documentation</a> to learn how to use.</p>
+    <updated>2014-05-20T13:24:24.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs" target="_blank">documentation</a> to learn how to use.<br>Hope you enjoy it!</p>
 ]]></content>
     
     

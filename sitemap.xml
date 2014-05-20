@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.yangact.com/2014/05/github%20blog/</loc>
-    <lastmod>2014-05-19T15:57:30.000Z</lastmod>
+    <loc>http://www.yangact.com/2014/05/hello-world/</loc>
+    <lastmod>2014-05-13T10:57:30.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.yangact.com/2014/05/hello-world/</loc>
-    <lastmod>2014-05-13T10:57:30.000Z</lastmod>
+    <loc>http://www.yangact.com/categories/index.html</loc>
+    <lastmod>2014-05-19T23:51:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yangact.com/tags/index.html</loc>
+    <lastmod>2014-05-19T23:50:45.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yangact.com/2014/05/github%20blog/</loc>
+    <lastmod>2014-05-19T15:57:30.000Z</lastmod>
   </url>
   
 </urlset>
