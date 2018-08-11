@@ -35,8 +35,8 @@ markdown: kramdown
 # highlighter: pygments
 # redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-theme: jekyll-theme-basically-basic
-# theme: jekyll-theme-minimal
+# theme: jekyll-theme-basically-basic
+theme: minima
 # remote_theme: "mmistakes/jekyll-theme-basically-basic"
 plugins:
   - jekyll-feed
