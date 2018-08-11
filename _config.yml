@@ -37,6 +37,7 @@ markdown: kramdown
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 theme: jekyll-theme-basically-basic
 # theme: jekyll-theme-minimal
+# remote_theme: "mmistakes/jekyll-theme-basically-basic"
 plugins:
   - jekyll-feed
 
