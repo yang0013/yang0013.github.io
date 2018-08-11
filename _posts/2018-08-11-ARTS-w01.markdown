@@ -1,0 +1,105 @@
+---
+layout: post
+title:  "ARTS w01"
+date:   2018-08-11 11:34:14 +0800
+categories: arts
+---
+
+## Algorithm
+leetcode 29 题，[Divide Two Integers ](https://leetcode.com/submissions/detail/168774665/)，给两个整数：除数和被除数，要求不使用乘法、除法、取余，计算两个数的商。  
+例子：
+
+
+>Input: dividend = 10, divisor = 3  
+>Output: 3
+
+
+代码：
+
+```python
+def divide(self, dividend, divisor):
+    i=0
+    tmp=abs(dividend)
+    while tmp>0:
+        tmp=tmp>>1
+        i+=1
+        
+    highest_bit = i-1
+    
+    y=abs(divisor)
+    x=abs(dividend)
+    j=highest_bit
+    res=0
+    allf = 0xFFFFFFFF
+    while x>0 and j>=0:        
+        tmp = (x & (allf << j)) >> j
+
+        if tmp - y >= 0:
+            x = ((tmp - y) << j) + (x & (allf >> (32-j)))
+            res= res+(1<<j)
+#            print('res', res)
+        j -= 1
+
+    negative = ((dividend ^ divisor) >> 31) < 0
+    res = -res if negative else res
+    max_sign_int = allf>>1
+    if res>max_sign_int or res<-max_sign_int-1:
+        res = max_sign_int
+
+    return res
+```
+
+这道题花了四个多小时，解题思路：使用位移操作，从 dividend 的高位开始，减去除数 divisor。但过程比较复杂，容易出错，计算了半天。
+
+翻了其他人的代码，有一个比较简洁：
+
+```python
+def divide_e(self, dividend, divisor):     
+    neg=( (dividend < 0) != (divisor < 0) )
+    dividend = left = abs(dividend)
+    divisor  = div  = abs(divisor)
+    Q = 1
+    ans = 0
+    while left >= divisor:
+        left -= div
+        ans  += Q 
+        Q    += Q
+        div  += div
+        print(left, ans, Q, div)
+        if left < div:
+            div = divisor
+            print('reset', div)
+            Q = 1
+    if neg:
+        return max(-ans, -2147483648)
+    else:
+        return min(ans, 2147483647)
+```
+这个逻辑清晰，代码简洁。dividend 不断减去 divisor 的 1、2、3……倍，不够减时再重置 divisor，直到 dividend 小于最初的 divisor。
+
+## Review
+
+medium 的一篇文章 [Code your own Proof of Stake blockchain in Go!](https://medium.com/@mycoralhealth/code-your-own-proof-of-stake-blockchain-in-go-610cd99aa658)，用 go 语言实现一个简单的 PoS（Proof of Stake）。最近看了很多以太坊 casper 的资料，casper 也是权益证明，看的云里雾里。这篇文章却给我提供了一个新的思路，一个简单可运行的PoS版本，理解 PoS 的核心。
+
+文章首先介绍了什么是 PoS，然后是 PoS 的弊端，然后就开始编码实现一条 PoS 区块链了！主要实现了两个功能，1. 伪点对点网络，节点之间的通讯通过一个中心的 TCP Server。2. 钱包和余额追踪。这两个功能就可以启动一条链。用一张图介绍了代码的结构，很直观。接着就是手把手教你写代码了。这是我很喜欢读英文技术文章的原因，他们会把思考的过程都梳理出来，让你清楚的知道全部的逻辑，以及为什么要这么做。他们基本都会从最简单的开始，如果没有也会给你相关链接，告诉你要先了解哪些信息，非常友好的技术文章。
+
+## Tip
+从上面的文章，学了一个小技巧，使用命令`nc` 和 TCP Server 交互通讯，很方便。文章中的例子：
+
+```
+> nc localhost 9090
+Enter token balance:100
+
+Enter a new BPM:1
+
+Enter a new BPM:2
+
+Enter a new BPM:3
+
+ca548b272862d4b4ed497bda28560fe7e1624b9d8b8cee18e50731f6d4ba74d1 赢得了记账权利
+```
+
+## Share
+
+最近看 bancor 的一些资料，分享一篇文章 [Bancor Is Flawed](http://hackingdistributed.com/2017/06/19/bancor-is-flawed/)，作者指责 bancor 团队用几行代码筹集了 1444 万美元，并细数了 bancor 的十八条罪状，如 bancor 的存在没意义、代码糟糕。评论区值得看，有几个大神为 bancor 辩护， bancor 团队针对每一条都做了详细的回复，[Response to “Bancor is Flawed”
+](https://blog.bancor.network/this-analysis-of-bancor-is-flawed-18ab8a000d43)。看他们如何去辩论，了解不同的观点，能够帮助思考 bancor 的应用，bancor 并不大适合用来做 Token 之间转换的交易，这个另外写一篇，好好梳理下。
