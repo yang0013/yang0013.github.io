@@ -1,0 +1,6 @@
+var store = [{
+        "title": "ARTS w01",
+        "excerpt":"Algorithm leetcode 29 题，Divide Two Integers ，给两个整数：除数和被除数，要求不使用乘法、除法、取余，计算两个数的商。例子： Input: dividend = 10, divisor = 3Output: 3 代码： def divide(self, dividend, divisor): i=0 tmp=abs(dividend) while tmp&gt;0: tmp=tmp&gt;&gt;1 i+=1 highest_bit = i-1 y=abs(divisor) x=abs(dividend) j=highest_bit res=0 allf = 0xFFFFFFFF while x&gt;0 and j&gt;=0: tmp = (x &amp; (allf &lt;&lt; j)) &gt;&gt; j if...","categories": ["arts"],
+        "tags": [],
+        "url": "/arts/2018/08/11/ARTS-w01.html"
+      }]

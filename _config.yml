@@ -24,18 +24,18 @@ github_username:  yang0013
 markdown: kramdown
 # Conversion
 # markdown:    kramdown
-highlighter: rouge
+# highlighter: rouge
 
-# Markdown Processors
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+# # Markdown Processors
+# kramdown:
+#   input: GFM
+#   auto_ids: true
+#   syntax_highlighter: rouge
 # markdown: redcarpet
 # highlighter: pygments
 # redcarpet:
 #   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-theme: minima
+theme: jekyll-theme-basically-basic
 # theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
